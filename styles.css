@@ -1,0 +1,108 @@
+:root {
+  /* Colors */
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Gray-500: hsl(0, 0%, 42%);
+  --Gray-950: hsl(0, 0%, 7%);
+
+  /* Font*/
+  --Figtree: "Figtree", serif;
+
+  /* Spacing */
+  --Space-300: 1.5rem;
+  --Space-150: 0.75rem;
+  --Space-100: 0.5rem;
+  --Space-50: 0.25rem;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Main Section */
+.blog-card-background {
+display: flex;
+font-family: var(--Figtree);
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: var(--Yellow);
+}
+
+.blog-card-container {
+  width: 327px;
+  border-radius: 20px;
+  padding: var(--Space-300) var(--Space-300);
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  box-shadow: 8px 8px black;
+}
+.illustration-img {
+  width: 279px;
+  padding-bottom: var(--Space-300);
+  border-radius: 10px;
+}
+
+.learning-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-size: 0.75rem;
+  padding: var(--Space-50) var(--Space-150);
+  width: 73px;
+  height: 29px;
+  background-color: var(--Yellow);
+  border-radius: 4px;
+}
+
+.blog-card-text > h1 {
+  font-weight: 800;
+}
+
+h1:hover {
+  color: var(--Yellow);
+  cursor: pointer;
+}
+
+.blog-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Space-300);
+}
+
+.greg-hooper-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: var(--Space-300);
+  gap: var(--Space-150);
+}
+
+.greg-hooper-img {
+  width: 32px;
+}
+
+.greg-hooper-container > h2 {
+  color: var(--Gray-950);
+  font-size: 0.875rem;
+}
+
+@media screen and (min-width: 768px) {
+  .blog-card-container {
+    width: 384px;
+  }
+
+  .illustration-img {
+    width: 336px;
+  }
+
+  .learning-tag {
+    width: 82px;
+  }
+}
