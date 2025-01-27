@@ -34,13 +34,14 @@ background-color: var(--Yellow);
 
 .blog-card-container {
   width: 327px;
+  height: 522px;
   border-radius: 20px;
   padding: var(--Space-300) var(--Space-300);
   background-color: var(--White);
   display: flex;
   flex-direction: column;
-  align-items: left;
   box-shadow: 8px 8px black;
+  border: 1px solid black;
 }
 .illustration-img {
   width: 279px;
@@ -59,6 +60,10 @@ background-color: var(--Yellow);
   height: 29px;
   background-color: var(--Yellow);
   border-radius: 4px;
+}
+
+.blog-card-text {
+  padding-bottom: var(--Space-300);
 }
 
 .blog-card-text > h1 {
@@ -85,7 +90,6 @@ h1:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: var(--Space-300);
   gap: var(--Space-150);
 }
 
