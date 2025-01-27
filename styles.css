@@ -63,6 +63,11 @@ background-color: var(--Yellow);
 
 .blog-card-text > h1 {
   font-weight: 800;
+  color: var(--Gray-950);
+}
+
+.blog-card-text > p {
+  color: var(--Gray-500);
 }
 
 h1:hover {
@@ -73,7 +78,7 @@ h1:hover {
 .blog-card-text {
   display: flex;
   flex-direction: column;
-  gap: var(--Space-300);
+  gap: var(--Space-150);
 }
 
 .greg-hooper-container {
